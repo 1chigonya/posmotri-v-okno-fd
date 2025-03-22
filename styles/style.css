@@ -80,7 +80,6 @@ ol {
   grid-column-gap: 30px;
   align-items: end;
   inline-size: 1140px;
-  min-height: 534px;
 }
 
 .result {
@@ -92,7 +91,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 23px;
   grid-area: 1 / 3 / 2 / 4;
   inline-size: 399px;
 }
@@ -153,18 +152,10 @@ ol {
   position: relative;
 }
 
-.search-form__pseudo-checkbox:hover {
-  cursor: pointer;
-}
-
 .search-form__pseudo-checkbox::after {
   /* Задаем стили выделенному чекбоксу */
   content: '';
-  position: absolute;
   display: none;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -190,13 +181,6 @@ ol {
 
 /* Поиск в форме */
 
-.search-form__textfield {
-  /* Задаем правильный размер поиску (т.к. спрятан лейбл, но место для него оставлено)*/
-  flex-grow: 1;
-  inline-size: 225px;
-  appearance: none;
-}
-
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
@@ -204,6 +188,10 @@ ol {
 }
 
 .search-form__textfield {
+  /* Задаем правильный размер поиску (т.к. спрятан лейбл, но место для него оставлено)*/
+  flex-grow: 1;
+  inline-size: 225px;
+  appearance: none;
   font-family: inherit;
   font-size: inherit;
   box-sizing: border-box;
